@@ -1,0 +1,75 @@
+html,body{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	background-color: #111;
+	color: #fff;
+}
+h1{
+	margin: auto;
+}
+.entry,form{
+	margin: auto;
+	width: 50%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid white;
+	border-radius: 20px;
+}
+form{
+	height: 100%;
+	width: 70%;
+	border: none;
+}
+label{
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 46px;
+}
+input{
+	height: 40px;
+	border-radius:10px;
+	border: 1px solid black;
+	font-size: 1.1em;
+}
+textarea{
+	height: 200px;
+	border-radius: 15px;
+}
+button{
+	margin-top: 20px;
+	height: 40px;
+	width: 87%;
+	align-self: center;
+	background-color: #1ecbe1;
+	border: none;
+}
+button:hover{
+	background-color: #15c5e5;
+	cursor: pointer;
+}
+footer{
+	font-size: 0.9em;
+}
+.item-listings {
+	margin-top: 25px;
+	width: 90%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-self: center;
+  	justify-content: space-evenly
+}
+.item {
+	height: 30em;
+	width: 22em;
+	padding: 4px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid white;
+	border-radius: 14px;
+}

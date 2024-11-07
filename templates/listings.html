@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Compatible Listings</title>
+	<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+	<h1>Compatible Listings</h1>
+    <div class="item-listings">
+        {% for i in range(0, listings|length, 4) %}
+            <div class="item">
+		<img src="{{listings[i]}}" style="height:100px;width:inherit">
+                <h2>{{ listings[i+1] }}</h2>  <!-- Title -->
+                <p>Price: {{ listings[i+2] }}</p>  <!-- Price -->
+                <a href="{{ listings[i+3] }}">View Item</a>  <!-- URL -->
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
